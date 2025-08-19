@@ -31,6 +31,7 @@
             this.lblSaludo = new System.Windows.Forms.Label();
             this.btSaludar = new System.Windows.Forms.Button();
             this.txtNombre = new System.Windows.Forms.TextBox();
+            this.btBorrar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblSaludo
@@ -60,11 +61,22 @@
             this.txtNombre.Size = new System.Drawing.Size(180, 29);
             this.txtNombre.TabIndex = 2;
             // 
+            // btBorrar
+            // 
+            this.btBorrar.Location = new System.Drawing.Point(403, 103);
+            this.btBorrar.Name = "btBorrar";
+            this.btBorrar.Size = new System.Drawing.Size(130, 45);
+            this.btBorrar.TabIndex = 3;
+            this.btBorrar.Text = "Borrar";
+            this.btBorrar.UseVisualStyleBackColor = true;
+            this.btBorrar.Click += new System.EventHandler(this.btBorrar_Click);
+            // 
             // frmSergio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(602, 186);
+            this.Controls.Add(this.btBorrar);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.btSaludar);
             this.Controls.Add(this.lblSaludo);
@@ -82,6 +94,7 @@
         private System.Windows.Forms.Label lblSaludo;
         private System.Windows.Forms.Button btSaludar;
         private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.Button btBorrar;
     }
 }
 

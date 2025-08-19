@@ -19,7 +19,13 @@ namespace Prg_v1.FrontEnd
 
         private void btSaludar_Click(object sender, EventArgs e)
         {
-            lblSaludo.Text = "Hola " + txtNombre.Text + "!!!!!!!";
+            lblSaludo.Text = "Hola ".ToUpper().Trim() + txtNombre.Text + "!!!!!!!";
+        }
+
+        private void btBorrar_Click(object sender, EventArgs e)
+        {
+            txtNombre.Clear();
+            lblSaludo.Text = "";
         }
     }
 }
